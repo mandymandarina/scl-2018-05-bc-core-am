@@ -7,29 +7,38 @@
 </head>
 <body>
 
-    <section class="one">
+    <div><section class="one">
       <h1>Descubre el mensaje codificado ;)</h1>
     </section>
-    
+
+    <section class="one-one">
+      <h2>utilizando Cifrado Cesar</h2>
+    </section>
+  </div>
     <section class="two">
-        <h2>Ingresar N° de desplazamiento en el acb</h2>
-        <div><input type="text" id="number" value="">
-        <button id="numero">Numero</button></div>
+        <h2>Ingresar N° de desplazamiento en tu abecedario</h2>
+        <div><input type="number" id="number" min="1" max="27" value="">
+        <button id="numero">Numero</button>
+        </div>
         
         <h2>Ingresa el texto que quieres codificar:</h2>
-        
         <div><input type="text" id="enter-one" value="">
-        <button id="code">Codificar</button></div>
-        <h3>Tu mensaje codificado</h3>
-        <div><input type="text" id="enter-one" value=""></div>
-        
-        <h2>Aqui esta el texto decodificado</h2>
-        
-        <div><input type="text" id="enter-two" value="">
-        <button id="decode">Decodificar</button></div>
-        <h3>Tu mensaje decodificado</h3>
-        <div><input type="text" id="enter-two" value=""></div>
+        <button id="code">Codificar</button>
+        <p id="message"></p>
+        </div>
+               
+        <h2>Aquí Ingresa tu mensaje a decodificar</h2>
+
+        <div><input type="text" id="enter-three" value="">
+        <button id="decode">Decodificar</button>
+        <p id="messagetwo"></p>
+        </div>
+             
     </section>
+
+    <textarea id="commentary" rows="5" cols="25" align="left">Déjame tu opinión</textarea>
+    <button id="thkx">Gracias c:</button>
+    <p id="messagethree"></p>
 
     <div id="root"></div>
 
