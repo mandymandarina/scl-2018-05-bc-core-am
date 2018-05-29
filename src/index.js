@@ -1,5 +1,7 @@
 /* Acá va tu código */
 window.onload =()=> {
+
+    const num = offset();
     const btn = document.getElementById("code");
     const btntwo= document.getElementById("decode");
     const btnthree=document.getElementById("thkx");
@@ -21,4 +23,8 @@ window.onload =()=> {
       document.getElementById("messagethree").innerHTML= messagethree;
     })
 
-}
+    num.addEventListener("click", function() {
+      numero=document.getElementById("number").value;
+    })
+    
+  }
