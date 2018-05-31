@@ -11,9 +11,10 @@ window.cipher = {
   },
   decode: (text, offsetNu) => {
     let result ="";
+    let textDecipher ="";
     for (let i=0; i<text.length; i++){
-      var textChar = ((text.charCodeAt(i) - 65 - offsetNu)%26) + 65;
-      textDecipher = String.fromCharCode(textChar);
+      var textChar = text.charCodeAt(i) - 65 - offsetNu%26 + 65;
+      textDecipher += String.fromCharCode(textChar);
       if (textChar < 65) {
         textChar += 26;
       }
