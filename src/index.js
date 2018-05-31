@@ -1,30 +1,20 @@
 /* Acá va tu código */
+/*para cifrar */
 window.onload =()=> {
 
-    const num = offset();
-    const btn = document.getElementById("code");
-    const btntwo= document.getElementById("decode");
-    const btnthree=document.getElementById("thkx");
+ const btn = document.getElementById("code");
 
-       
+  btn.addEventListener("click", function() {
+  let offsetNum = document.getElementById("number-one").value;
+  const enterText = document.getElementById("enter-one").value;
+  const outText = window.ciper.encode(enterText, offsetNum);
+  document.getElementById("enter-two").innerHTML =outText;
+})
+  
+ const btnThree = document.getElementById("thkx");
 
-    btn.addEventListener("click",function() {
-    message=document.getElementById("enter-one").value;
-      document.getElementById("message").innerHTML="<h3>Tu mensaje codificado es:</h3><div><input type='text' id='enter-two' value=''></div> ";
-    })
-
-    btntwo.addEventListener("click", function() {
-    messagetwo=document.getElementById("enter-three").value;
-      document.getElementById("messagetwo").innerHTML="<h3>Tu mensaje decodificado es:</h3><div><input type='text' id='enter-four' value=''></div> ";
-    })
-    
-    btnthree.addEventListener("click", function() {
-    messagethree=document.getElementById("commentary").value;
-      document.getElementById("messagethree").innerHTML= messagethree;
-    })
-
-    num.addEventListener("click", function() {
-      numero=document.getElementById("number").value;
-    })
-    
-  }
+  btnThree.addEventListener("click", function() {
+  messagethree=document.getElementById("commentary").value;
+  document.getElementById("messagethree").innerHTML= messagethree;
+})
+}

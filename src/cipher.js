@@ -1,38 +1,22 @@
 window.cipher = {
-  
-  encode: () => {
+    encode: (text, offset) => {
     /* Acá va tu código */
-    
-    function cipher(text){
-    
-    const textCipher ="";
+    const textChar;
     let result = "";
-
-    for(let i =0; i<text.length; i++){
-    var textChar = (text.charCodeAt(i) - 65 + num)%26 + 65;
-
-      textCipher += String.fromCharCode(textChar);
+    for (let i=0; i<text.length; i++) {
+    var textChar = ((text.charCodeAt(i) - 65 + offset)%26) + 65;
+    var textCipher = String.fromCharCode(textChar);
     }
     return textCipher;
-  } 
   },
-
-  decode: () => {
+  decode: (text, offset) => {
     /* Acá va tu código */
-
-    function decipher(text){
-    
-    const textDecipher = "";
+    const texChar2;
     let result = "";
-
     for(let i = 0; i<text.length; i++){
-
-      var textChar = (String.fromCharCode(text(i)) + num)%26;
-      textDecipher = textDecipher + textChar;
-      var newText = newText.charCodeAt(textDecipher);
+    var textChar2 = ((text.charCodeAt(i) - 65 - offset)%26) + 65;
+    var textDecipher = String.fromCharCode(textChar2);
     }
-    return newText;
-    }
+  return textDecipher;
   }
-
 }
