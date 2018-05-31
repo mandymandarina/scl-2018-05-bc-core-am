@@ -1,7 +1,6 @@
 /* Acá va tu código */
-/*para cifrar */
 window.onload = () => {
-
+  //Boton para codificar
   const btn = document.getElementById("code");
 
   btn.addEventListener("click", function () {
@@ -10,6 +9,7 @@ window.onload = () => {
     document.getElementById("enter-two").innerHTML = window.cipher.encode(enterText, offsetNum);
   })
 
+  //Boton para decodificar
   const btnt = document.getElementById("decode");
 
   btnt.addEventListener("click", function () {
@@ -17,7 +17,8 @@ window.onload = () => {
     const enterText = document.getElementById("enter-three").value;
     document.getElementById("enter-four").innerHTML = window.cipher.decode(enterText, offsetNum);
   })
-  
+
+  //Boton para hacer comentarios
   const btnThree = document.getElementById("thkx");
 
   btnThree.addEventListener("click", function () {

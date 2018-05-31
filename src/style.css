@@ -61,9 +61,14 @@ body {
   padding: 20px;   
   border: 1px solid darkgray;
   border-radius:  3px;
-  height: 1300px;
+  height: 1200px;
   width: 800px;
   text-align: center;
   position: relative;
   left: 250px;
+}
+
+.enter-one {
+  height: 1000px;
+  width: 60px;
 }
