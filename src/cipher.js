@@ -2,6 +2,7 @@ window.cipher = {
     encode: (text, offsetNu )=> {
       let result ="";
       let textCipher ="";
+      text=text.toUpperCase();
       offsetNu = parseInt(offsetNu);
       for (let i=0; i<text.length; i++) {
         var textChar = ((text.charCodeAt(i) - 65 + offsetNu)%26) + 65;
@@ -13,7 +14,7 @@ window.cipher = {
     let result ="";
     let textDecipher ="";
     for (let i=0; i<text.length; i++){
-      var textChar = text.charCodeAt(i) - 65 - offsetNu % 26 + 65;
+      var textChar = ((text.charCodeAt(i) - 65 - offsetNu) % 26) + 65;
       
       if (textChar < 65) {
         textChar += 26;
