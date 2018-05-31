@@ -1,18 +1,22 @@
 window.cipher = {
-    encode: (text, offset)=> {
+    encode: (text, offsetNu )=> {
       let result ="";
       let textCipher ="";
+      offsetNu = parseInt(offsetNu);
       for (let i=0; i<text.length; i++) {
-        var textChar = ((text.charCodeAt(i) - 65 + offset)%26) + 65;
+        var textChar = ((text.charCodeAt(i) - 65 + offsetNu)%26) + 65;
         textCipher += String.fromCharCode(textChar);
       }
        return textCipher;
   },
-  decode: (text, offset) => {
+  decode: (text, offsetNu) => {
     let result ="";
     for (let i=0; i<text.length; i++){
-      var textChar = ((text.charCodeAt(i) - 65 - offset)%26) + 65;
-      var textDecipher = String.fromCharCode(textChar);
+      var textChar = ((text.charCodeAt(i) - 65 - offsetNu)%26) + 65;
+      textDecipher = String.fromCharCode(textChar);
+      if (textChar < 65) {
+        textChar += 26;
+      }
     }
   return textDecipher;
   }

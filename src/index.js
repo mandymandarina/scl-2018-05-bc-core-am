@@ -10,6 +10,14 @@ window.onload = () => {
     document.getElementById("enter-two").innerHTML = window.cipher.encode(enterText, offsetNum);
   })
 
+  const btnt = document.getElementById("decode");
+
+  btnt.addEventListener("click", function () {
+    let offsetNum = document.getElementById("number-one").value;
+    const enterText = document.getElementById("enter-three").value;
+    document.getElementById("enter-four").innerHTML = window.cipher.decode(enterText, offsetNum);
+  })
+  
   const btnThree = document.getElementById("thkx");
 
   btnThree.addEventListener("click", function () {
