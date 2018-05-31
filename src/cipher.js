@@ -1,17 +1,17 @@
 window.cipher = {
     encode: (text, offset) => {
     /* Acá va tu código */
-    const textChar;
-    let result = "";
+    let textCipher;
+    let result ="";
     for (let i=0; i<text.length; i++) {
-    var textChar = ((text.charCodeAt(i) - 65 + offset)%26) + 65;
-    var textCipher = String.fromCharCode(textChar);
+     textCipher = ((text.charCodeAt(i) - 65 + offset)%26) + 65;
+     result += String.fromCharCode(textCipher);
     }
-    return textCipher;
+    return result;
   },
   decode: (text, offset) => {
     /* Acá va tu código */
-    const texChar2;
+    let texChar2;
     let result = "";
     for(let i = 0; i<text.length; i++){
     var textChar2 = ((text.charCodeAt(i) - 65 - offset)%26) + 65;
