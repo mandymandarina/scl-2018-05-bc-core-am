@@ -9,7 +9,6 @@ window.cipher = {
       if (text.charCodeAt(i) === 32) {
         textCipher += " ";
       }
-
       textCipher += String.fromCharCode(textChar);
     }
     return textCipher;
