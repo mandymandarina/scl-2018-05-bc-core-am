@@ -1,37 +1,37 @@
-APLICACION PARA DECIFRAR "CODIGO CESAR"
+# APLICACION PARA DECIFRAR "CODIGO CESAR"
 
-Esta es una aplicación que se utiliza para poder codificar e igualmente decodificar algun mensaje de texto que 
+Esta es una aplicaciï¿½n que se utiliza para poder codificar e igualmente decodificar algun mensaje de texto que 
 necesites que se mantenga en secreto y que solo tu puedas entenderlo.
 
-El RETO
+## El RETO
 
-crear una aplicación en la que se pueda cifrar y decifrar un mensaje de texto
+crear una aplicaciï¿½n en la que se pueda cifrar y decifrar un mensaje de texto
 
-CIFRADO CESAR
+## CIFRADO CESAR
 
 Para lograr realizar el proyecto se utilizaron las siguientes funciones:
 
-*for ()
+* for ()
 
-*text.charCodeAt()
+* text.charCodeAt()
 
-*String.fromCharCode() 
+* String.fromCharCode() 
 
-Para cifrar el mensaje de texto se utilizó la esta formula:
+Para cifrar el mensaje de texto se utilizï¿½ la esta formula:
 
-*(x - 65 + n) % 26) + 65
+* (x - 65 + n) % 26) + 65
 
-*Para decifrar el mensaje de texto se utilizo esta formula:
+* Para decifrar el mensaje de texto se utilizo esta formula:
 
-*(x - 65 - n) % 26) + 65
+* (x - 65 - n) % 26) + 65
 
 
-METODOLOGIA DEL TRABAJO
+## METODOLOGIA DEL TRABAJO
 
-*Se utilizó una metodologia Agile en donde las soluciones se van dando conforme a la la colaboración entre los 
+*Se utilizï¿½ una metodologia Agile en donde las soluciones se van dando conforme a la la colaboraciï¿½n entre los 
 diferentes equipos de trabajo involucrados en el proyecto.
-*Como herramienta de respaldo se utilizó la plataforma GitHub donde se creo un repositorio para luego hacer Fork y clonarlo.
-*Se utilozó Trello como herramienta para la organizacion tanto individual como en equipo para la realización del proyecto.
-*Se utilizó Slack como medio para entregar informacion de ayuda para la realización del proyecto.
+*Como herramienta de respaldo se utilizï¿½ la plataforma GitHub donde se creo un repositorio para luego hacer Fork y clonarlo.
+*Se utilozï¿½ Trello como herramienta para la organizacion tanto individual como en equipo para la realizaciï¿½n del proyecto.
+*Se utilizï¿½ Slack como medio para entregar informacion de ayuda para la realizaciï¿½n del proyecto.
 
 
