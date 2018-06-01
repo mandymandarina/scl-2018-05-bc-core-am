@@ -6,10 +6,10 @@ window.cipher = {
     offsetNu = parseInt(offsetNu);
     for (let i = 0; i < text.length; i++) {
       var textChar = ((text.charCodeAt(i) - 65 + offsetNu) % 26) + 65;
-      if (text.charCodeAt(i) === 32){
-          textCipher +=" ";
+      if (text.charCodeAt(i) === 32) {
+        textCipher += " ";
       }
-      if 
+
       textCipher += String.fromCharCode(textChar);
     }
     return textCipher;
@@ -23,9 +23,9 @@ window.cipher = {
       if (textChar < 65) {
         textChar += 26;
       }
-      if (text.charCodeAt(i) === 32){
-        textDecipher +=" ";
-    }
+      if (text.charCodeAt(i) === 32) {
+        textDecipher += " ";
+      }
       textDecipher += String.fromCharCode(textChar);
 
     }
