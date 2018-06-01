@@ -1,0 +1,74 @@
+/* Acá va tu código */
+.one {
+  text-align: center;
+  font-family: Freestyle Script;
+  font-size: 50px;
+  color: #4F1D26
+}
+
+.two {
+  text-align: center;
+  font-family: Freestyle Script black;
+  font-size: 25px;
+}
+
+body {
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+    background-size:100% 140%
+}
+
+#enter-one {
+  text-align: center;
+}
+
+#enter-two {
+  text-align: center;
+}
+#numero {
+  background: rgb(173, 18, 52);
+  font-size: 15px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.226);
+}
+
+#code {
+  background:rgb(173, 18, 52);
+  font-size: 15px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.226);
+}
+
+#decode {
+  background:  rgb(173, 18, 52);
+  font-size: 15px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.226);
+}
+
+.up{
+  background: #FCE45E;
+  margin-bottom: 10px;
+  font-size: 10px;
+  padding: 20px;   
+  border: 1px solid darkgray;
+  border-radius:  3px;
+  height: 1200px;
+  width: 800px;
+  text-align: center;
+  position: relative;
+  left: 250px;
+}
+
+.enter-one {
+  height: 1000px;
+  width: 60px;
+}
